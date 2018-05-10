@@ -23,7 +23,7 @@ class mineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.viewDidLoad()
         
         self.title = "我的"
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.red
 
         // Do any additional setup after loading the view.
     }
