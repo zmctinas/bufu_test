@@ -26,9 +26,9 @@ class ViewController: UIViewController {
         btn.addTarget(self, action: #selector(buttonclick(btn:)), for: .touchUpInside)
         
         
-        let image = UIImageView.init(frame: CGRect.init(x: 50, y: 300, width: 80, height: 80))
-        let tap = UITapGestureRecognizer.init(target: self, action: #selector(buttonclick(btn:)))
-        image.addGestureRecognizer(tap)
+//        let image = UIImageView.init(frame: CGRect.init(x: 50, y: 300, width: 80, height: 80))
+//        let tap = UITapGestureRecognizer.init(target: self, action: #selector(buttonclick(btn:)))
+//        image.addGestureRecognizer(tap)
         
         
         
