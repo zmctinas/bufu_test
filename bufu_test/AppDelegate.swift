@@ -8,15 +8,41 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        let tabview = UITabBarController.init()
+//        tabview.setViewControllers([ViewController(),mineViewController()], animated: true)
+        
+        self.addTabControllers(childVC: ViewController(), title: "", normalImageName: "tabbar_message", selectImageName: "tabbar_message_h", tabController: tabview)
+        self.addTabControllers(childVC: mineViewController(), title: "", normalImageName: "tabbar_mine", selectImageName: "tabbar_mine_h", tabController: tabview)
+        
+        
+        
+        window?.rootViewController = UINavigationController.init(rootViewController:tabview)
+        window?.makeKeyAndVisible()
+        
         return true
+    }
+    
+    func addTabControllers(childVC:UIViewController , title : String? , normalImageName : String , selectImageName : String ,tabController : UITabBarController) {
+        
+        let  tabbarItem = UITabBarItem.init(title: title, image: UIImage.init(named: normalImageName), selectedImage: UIImage.init(named: selectImageName))
+        
+        childVC.tabBarItem = tabbarItem
+        
+        let nav = UINavigationController.init(rootViewController: childVC)
+        
+        tabController.addChildViewController(nav)
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -12,6 +12,7 @@
 		A1C33B9F20A17D0B005934C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C33B9D20A17D0B005934C7 /* Main.storyboard */; };
 		A1C33BA120A17D0D005934C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C33BA020A17D0D005934C7 /* Assets.xcassets */; };
 		A1C33BA420A17D0D005934C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C33BA220A17D0D005934C7 /* LaunchScreen.storyboard */; };
+		A1C33BAC20A1851C005934C7 /* mineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C33BAB20A1851C005934C7 /* mineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A1C33BA020A17D0D005934C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C33BA320A17D0D005934C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C33BA520A17D0D005934C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C33BAB20A1851C005934C7 /* mineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A1C33B9920A17D0B005934C7 /* AppDelegate.swift */,
 				A1C33B9B20A17D0B005934C7 /* ViewController.swift */,
+				A1C33BAB20A1851C005934C7 /* mineViewController.swift */,
 				A1C33B9D20A17D0B005934C7 /* Main.storyboard */,
 				A1C33BA020A17D0D005934C7 /* Assets.xcassets */,
 				A1C33BA220A17D0D005934C7 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C33B9C20A17D0B005934C7 /* ViewController.swift in Sources */,
+				A1C33BAC20A1851C005934C7 /* mineViewController.swift in Sources */,
 				A1C33B9A20A17D0B005934C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
